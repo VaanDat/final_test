@@ -51,11 +51,9 @@ INSTALLED_APPS = [
     'mptt',
     'ckeditor',
     'storages',
-    'corsheaders',
 ]
 
 MIDDLEWARE = [
-    '**corsheaders.middleware.CorsMiddleware**',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
