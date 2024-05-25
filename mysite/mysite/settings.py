@@ -31,7 +31,7 @@ SECRET_KEY = '$+6dvv^9ra*vl$4hicp(yo4@or&w7+^h@*r94b)g-j&@*-eb*#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['finaldemo829x.azurewebsites.net']
 
 
 # Application definition
