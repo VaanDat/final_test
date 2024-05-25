@@ -51,9 +51,11 @@ INSTALLED_APPS = [
     'mptt',
     'ckeditor',
     'storages',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    '**corsheaders.middleware.CorsMiddleware**',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -181,4 +183,5 @@ AZURE_ACCOUNT_NAME = os.getenv('AZURE_ACCOUNT_NAME')
 AZURE_ACCOUNT_KEY = os.getenv('AZURE_ACCOUNT_KEY')
 AZURE_CONTAINER = os.getenv('AZURE_CONTAINER')
 
+CSRF_TRUSTED_ORIGINS = ['finaldemo829x.azurewebsites.net']
 ###################################

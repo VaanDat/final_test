@@ -8,3 +8,4 @@ django-storages
 azure-storage-blob
 django-environ
 python-dotenv
+django-cors-headers
