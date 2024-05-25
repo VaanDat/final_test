@@ -29,7 +29,7 @@ print(BASE_DIR)
 SECRET_KEY = '$+6dvv^9ra*vl$4hicp(yo4@or&w7+^h@*r94b)g-j&@*-eb*#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['finaldemo829x.azurewebsites.net']
 
@@ -181,5 +181,6 @@ AZURE_ACCOUNT_NAME = os.getenv('AZURE_ACCOUNT_NAME')
 AZURE_ACCOUNT_KEY = os.getenv('AZURE_ACCOUNT_KEY')
 AZURE_CONTAINER = os.getenv('AZURE_CONTAINER')
 
-CSRF_TRUSTED_ORIGINS = ['finaldemo829x.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://finaldemo829x.azurewebsites.net','https://*.127.0.0.1']
 ###################################
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
